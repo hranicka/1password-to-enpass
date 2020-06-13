@@ -1,12 +1,20 @@
-# 1password to Enpass Migration
+# 1Password to Enpass Migration
 
-This is a utility helping with migration from 1password to Enpass.
+This is a utility helping with migration from 1Password to Enpass.
 
-It converts 1password CSV export file to Enpass Pre-formatted CSV file with some normalization.
+It converts 1Password CSV export file to Enpass Pre-formatted CSV file with some normalization.
+
+## Installation/build
+
+```
+git clone https://github.com/hranicka/1password-to-enpass.git
+cd 1password-to-enpass
+go build
+```
 
 ## Usage
 
-1. Export 1password data to CSV file.
+1. Export 1Password data to CSV file.
 1. Run the utility.
 1. Import Pre-formatted CSV file in Enpass.
 1. Enjoy normalized data in Enpass without further manual modifications.
@@ -15,7 +23,9 @@ It converts 1password CSV export file to Enpass Pre-formatted CSV file with some
 
 ## Requirements
 
-Input file (exported from 1password) has to be named `input.csv` and its path
+[Go](https://golang.org/doc/install) has to be installed otherwise you won't be able to build the application.
+
+Input file (exported from 1Password) has to be named `input.csv` and its path
 must be `./input.csv` (in current working directory when launching the utility).
 
 ## Notes
